@@ -1,0 +1,56 @@
+- type: home
+  navs:
+    - name: 科学集市
+      description: 
+      link: "/wedding/science"
+      showsub: true
+      sub:
+        - name: 关于科学集市
+          description: 科学是一种生活态度
+          link: "/wedding/science/"
+        - name: 科学知识一条
+          description: 获取一条随机科学知识
+          link: "/wedding/science/random"
+    - name: 更新
+      description: 
+      link: "/wedding/updates"
+      showsub: true
+      sub:
+        - name: 日常更新
+          description: 婚礼筹备日记
+          link: "/wedding/updates"
+        - name: 代码更新
+          description: 婚礼相关代码更新
+          link: "https://github.com/hllmfamily/wedding/commits/gh-pages"
+    
+- type: main
+  navs:
+    - name: 科学集市
+      description: 
+      link: "/wedding/science"
+      showsub: true
+      sub:
+        - name: 关于科学集市
+          description: 我们所热爱的生活
+          link: "/wedding/science/"
+        - name: 科学知识一条
+          description: 获取一条随机科学知识
+          link: "/wedding/science/random"
+    - name: 更新
+      description: 
+      link: "/wedding/updates"
+      showsub: true
+      sub:
+        - name: 日常更新
+          description: 婚礼筹备日记
+          link: "/wedding/updates"
+        - name: 工具和内容列表
+          description: 婚礼相关工具和内容
+          link: "/wedding/updates/resources"
+
+- type: "top-right"
+  navs:
+    - name: GitHub
+      description:
+      fa-icon: "fa fa-github-alt text-light"
+      link: "https://github.com/hllmfamily/wedding"

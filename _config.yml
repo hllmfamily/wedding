@@ -1,0 +1,30 @@
+---
+title: AA和BB的结婚典礼
+title_en: "AA and BB's Wedding"
+timezone: UTC
+collections:
+  updates:
+    title: Updates
+    output: true
+  posts:
+    title: Posts
+    output: true
+  science:
+    title: Science
+    output: true
+    layout: science
+  uploads:
+    title: Uploads
+    output: true
+email: wedding@hanlu.io
+wechat: emptymalei
+description_en: "Wedding with Science included"
+description: "婚礼也科学"
+baseurl: '/wedding'
+# baseurl: ''
+#url: 'http://leima.hanlu.io'
+url: ''
+github_username: hllmfamily
+markdown: kramdown
+plugins:
+- jekyll-feed

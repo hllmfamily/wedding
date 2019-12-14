@@ -1,0 +1,51 @@
+- type: home
+  navs:
+    - name: Science Fair
+      description: 
+      link: "/wedding/science"
+      showsub: true
+      sub:
+        - name: About Science Fair
+          description: Science is our life style
+          link: "/wedding/science/"
+    - name: Updates
+      description: 
+      link: "/wedding/updates"
+      showsub: true
+      sub:
+        - name: Daily Updates
+          description: the plan
+          link: "/wedding/updates"
+        - name: Tools and Contents
+          description: tools and contents we used or created
+          link: "/wedding/updates/resources"
+    
+- type: main
+  navs:
+    - name: Science Fair
+      description: 
+      link: "/wedding/science"
+      showsub: true
+      sub:
+        - name: About Science Fair
+          description: Science is our life styl
+          link: "/wedding/science/"
+    - name: Updates
+      description: 
+      link: "/wedding/updates"
+      showsub: true
+      sub:
+        - name: Daily Updates
+          description: the plan
+          link: "/wedding/updates"
+        - name: Code Updates
+          description: our open source code
+          link: "https://github.com/hllmfamily/wedding/commits/gh-pages"
+
+- type: "top-right"
+  navs:
+    - name: GitHub
+      description:
+      fa-icon: "fa fa-github-alt text-light"
+      link: "https://github.com/hllmfamily/wedding"
+

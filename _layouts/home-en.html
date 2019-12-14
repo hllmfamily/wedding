@@ -1,0 +1,61 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include home/en/head.html %}
+
+<body>
+{% include home/en/header.html %}
+
+<main>
+    {% include home/en/splash.html %}
+
+   {% include home/en/intro.html %}
+   
+   {% include home/en/we.html %}
+   
+{% include home/en/science-two.html %}
+
+
+</main>
+
+{% include en/footer.html %}
+{% include footer-script.html %}
+
+
+<script src="{{ "/assets/moment/moment-with-locales.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/moment/moment-timezone-with-data.js" | prepend: site.baseurl }}"></script>
+
+	<link rel="stylesheet" href="{{ "/assets/odometer/odometer-theme-plaza.css" | prepend: site.baseurl }}" />
+	<script src="{{ "/assets/odometer/odometer.min.js" | prepend: site.baseurl }}"></script>
+
+	<script>
+		var married = moment("2016-12-29T08:00:00Z")
+		var wedding = moment.tz("2019-09-14T08:00:00","Asia/Shanghai")
+
+
+		var married_update = function() {
+			var now = moment.utc()
+			var married_days = now.diff(married, 'days')
+			$('#married_days').html(married_days)
+		};
+
+		var wedding_update = function() {
+			var now = moment.utc()
+			var wedding_days = now.diff(wedding, 'days')
+			$('#wedding').html(-1*wedding_days)
+		};
+
+		$(document).ready(function() {
+			married_update();
+			wedding_update();
+			setInterval(wedding_update, 100000);
+		});
+	</script>
+
+</body>
+
+
+</html>

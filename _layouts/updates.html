@@ -1,0 +1,47 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+<main class="profile-page">
+
+    {% include page-splash.html %}
+
+    <section class="section" style="padding-top:0px !important;background: url('{{'/assets/theme/img/splash/page-splash.jpg' | prepend: site.baseurl }}' ) no-repeat center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+        <div class="container">
+          <div class="card card-profile shadow mt--300">
+            <div class="px-4">
+              
+          
+              <div class="mt-5 py-5 border-top">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="badge badge-pill badge-primary" style="margin-bottom:2em;"><i class="ni ni-calendar-grid-58"></i> {{ page.date | date: "%Y-%m-%d" }}</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    {{ content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+</main>
+
+{% include footer.html %}
+{% include footer-script.html %}
+</body>
+
+
+</html>

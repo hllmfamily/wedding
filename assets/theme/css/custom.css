@@ -1,0 +1,38 @@
+
+/* Animation */
+.anim-line{
+    position: relative;
+    top: 80%;  
+    width: 20em;
+    margin: 0 auto;
+    /* border-right: 2px solid rgba(255,255,255,.75); */
+    /* font-size: 180%; */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+    animation: typewriter 4s steps(25) 1s 1 normal both,
+               blinkTextCursor 500ms steps(25) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 20em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+
+.intro--description--details{
+  text-align:center;
+  font-size:200%;
+  display:block !important;
+  height:2em;
+}
+
+figure>p>img {
+max-width: 100%;
+}
